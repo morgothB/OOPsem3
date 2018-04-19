@@ -52,7 +52,7 @@ public class StatisticMultiset <T extends Number> implements Statistical, Clonea
 
 
     public void addNumsFromFile(String fileName) throws FileNotFoundException {
-        File path = new File("src\\lab2\\input\\" + fileName);
+        File path = new File("src/lab2/input/" + fileName);
         Scanner in = new Scanner(path);
         if (this.keyClass == Integer.class){
             addIntsFromIOStream(in);
